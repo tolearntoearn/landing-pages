@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
+    <title>To Learn To Earn</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>To Learn To Earn</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+
+    <!--  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+
     <style>
 
         * {
@@ -17,7 +21,8 @@
             margin: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             overflow-x: hidden;
         }
 
@@ -43,7 +48,8 @@
             font-family: "BRH Devanagari", serif;
             color: #545454;
         }
-        .home-discrip{
+
+        .home-discrip {
             margin: 1.2em auto;
             display: flex;
             flex-direction: column;
@@ -53,21 +59,22 @@
             width: 70%;
         }
 
-        .carousal-div{
+        .carousal-div {
             max-width: 800px;
             text-align: center;
             margin: 20px auto;
         }
 
-        .carousal-div h3{
+        .carousal-div h3 {
             margin-bottom: 0;
         }
 
 
-        .carousel-control-next-icon{
+        .carousel-control-next-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c593d8'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
         }
-        .carousel-control-prev-icon{
+
+        .carousel-control-prev-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c593d8'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
         }
 
@@ -75,7 +82,7 @@
             padding: 10px 0;
         }
 
-        .registerBtn{
+        .registerBtn {
             background-color: #f98908;
             border: 1px solid gray;
             color: white;
@@ -88,23 +95,25 @@
             box-shadow: 0 0 2px 0 gray;
             cursor: pointer;
         }
-        .carousel-indicators [data-bs-target]{
+
+        .carousel-indicators [data-bs-target] {
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background-color: #836d6d !important;
-            box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+            box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
         }
+
         .carousel-indicators .active {
             background-color: #0e0e0e;
         }
 
-        .main{
+        .main {
             padding-top: 10px;
             position: relative;
         }
 
-        .circle1{
+        .circle1 {
             position: absolute;
             background-color: #e79a31;
             height: 300px;
@@ -115,13 +124,13 @@
             z-index: -2;
         }
 
-        .registerBtn{
+        .registerBtn {
             animation: zoom 1.2s infinite;
             /*animation: shake .5s alternate infinite;*/
 
         }
 
-        .registerBtn:hover{
+        .registerBtn:hover {
             animation: none;
         }
 
@@ -134,32 +143,62 @@
         }
 
         @keyframes zoom {
-            from{
+            from {
                 transform: scale(.6);
             }
-            to{
+            to {
                 transform: scale(1);
             }
         }
 
         @keyframes shake {
-            from{
+            from {
                 transform: rotate(5deg);
             }
-            to{
+            to {
                 transform: rotate(-5deg);
             }
         }
 
 
-
-        @media only screen and (max-width: 600px){
-            .brand img{
+        @media only screen and (max-width: 600px) {
+            .brand img {
                 width: 200px;
             }
         }
 
 
+        .blockquote-custom {
+            position: relative;
+            font-size: 1.1rem;
+            padding: 1em 0;
+        }
+
+        .blockquote-custom-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            background-color: #f98908;
+        }
+
+        .blockquote-custom-icon2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            background-color: #f98908;
+        }
 
         .ball {
             position: absolute;
@@ -167,67 +206,19 @@
             opacity: 0.7;
             z-index: -3;
         }
-        body{
+
+        body {
             overflow-x: hidden;
         }
 
-
-
-
-        canvas {
-            display: block;
-            vertical-align: bottom;
+        .list-group-item {
+            padding: 5px 15px;
         }
 
-        /* ---- particles.js container ---- */
-
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #ffff;
-            background-image: url("");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
+        .carousel-inner {
+            width: 67%;
+            left: 17%;
         }
-
-        /* ---- stats.js ---- */
-
-        .count-particles{
-            background: #0000;
-            position: absolute;
-            top: 48px;
-            left: 0;
-            width: 80px;
-            color: #0000;
-            font-size: .8em;
-            text-align: left;
-            text-indent: 4px;
-            line-height: 14px;
-            padding-bottom: 2px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-        }
-
-        .js-count-particles{
-            font-size: 1.1em;
-        }
-
-        #stats,
-        .count-particles{
-            -webkit-user-select: none;
-        }
-
-        #stats{
-            border-radius: 3px 3px 0 0;
-            overflow: hidden;
-        }
-
-        .count-particles{
-            border-radius: 0 0 3px 3px;
-        }
-
     </style>
 </head>
 <body>
@@ -237,9 +228,11 @@
 
 <div class="container main">
     <div class="header">
-        <a href="https://tolearntoearn.com" class="brand" target="_blank"><img src="Images/logo.svg" width="300" alt="brand"/></a>
+        <a href="https://tolearntoearn.com" class="brand" target="_blank"><img src="Images/logo.svg" width="300"
+                                                                               alt="brand"/></a>
         <!--        <a href="#register" class="btn rounded-pill fw-bold align-items-center" style="background-color: white;color: #222a34">-->
-        <a href="#register" class="btn text-light rounded-pill fw-bold align-items-center" style="background-color: #f98908;">
+        <a href="#register" class="btn text-light rounded-pill fw-bold align-items-center"
+           style="background-color: #f98908;">
             Register Now
         </a>
     </div>
@@ -247,21 +240,52 @@
         <h2 class="heading fade show">Graphic Design Workshop</h2>
         <div class="home-discrip">
             <span class="marathi-font"><i>शिका मराठीतून ग्राफिक डिजाईन फक्त ३ दिवसात .</i></span><br>
-            <span class="discrip-text">3 Days Live Interactive Graphic Design Workshop<br> Learn Great Design In Just 3 Days in 3 Hours.
-            <br>
-            Graphic Design Workshop which covers Design Theory, Branding, Logo Design, How to earn
-                by learning graphic design, and Many More.</span>
+            <span class="discrip-text">Graphic Design चे महत्व जाणून तुम्ही अगदी योग्य ठिकाणी आलेले अहात.
+तुम्ही विद्यार्थी, नौकरी करणारे, व्यवसाय करणारे किंवा नवीन रोजगाराच्या शोधत असाल आणि ग्राफिक डिझाईन शिकण्यासाठी नुकतीच सुरुवात केलेली असेल किंवा आता सुरुवात करणार असले तर हा Workshop तुमच्यासाठी अगदी उपयुक्त आहे व तुमचे आर्थिक ध्येय साध्य  करण्यास मदत करणारा ठरेल. </span>
         </div>
     </div>
+
+    <div class="row " style="margin: 3em 0">
+        <div class="col-lg-10 mx-auto d-flex justify-content-center">
+
+            <!-- CUSTOM BLOCKQUOTE -->
+            <blockquote style="width: fit-content;width: -moz-fit-content;"
+                        class="blockquote blockquote-custom bg-white shadow rounded d-flex justify-content-center">
+                <div class="blockquote-custom-icon primary-background shadow-sm mx-2"
+                     style="position: relative;left: 0;margin-top: -10px;"><i
+                        class="fa fa-quote-left text-white"></i></div>
+                <p class="mb-0 mt-2 font-italic fs-4 fst-italic text-center">There's no better time to start working
+                    towards your dreams than Right Now.</p>
+                <div class="blockquote-custom-icon2 primary-background shadow-sm mx-2"
+                     style="position: relative;right: 0;margin-top: -10px;"><i
+                        class="fa fa-quote-right text-white"></i></div>
+            </blockquote>
+            <!-- END -->
+
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+        <div class="registerBtn text-center" style="margin-bottom: 2em"><h4 class="mb-0">Register Now for ₹199/-
+            Only</h4></div>
+    </div>
+
     <div class="carousal-div fade show">
-        <h3>Take a look at the graphics below. Do you want to learn graphics like that?</h3>
+        <h4>Learn to make Graphic Designs as shown below in just 5 minutes.
+        </h4>
         <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -280,121 +304,131 @@
                     <img src="Images/Picture5.png" class="d-block w-100" style="max-height: 500px" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
-        <div>
-            <h2 class="mb-0"> All You Have To Do is Take Action Right Now.</h2>
-            <p class="home-discrip register-details" style="margin: .5em auto;"> Why? Because seats are strictly limited (Only 100)<br>
-                <span style="font-size: .8em;font-weight: bold">Workshop Date : 15th Dec. 10:00 Am (IST)</span>
-                <span style="display: flex;justify-content: center"> Total Value Rs. <s style="width: 70px"> 5999</s>&nbsp;Right Now Only At </span>
-                <span style="color: red;font-size: 2em;font-weight: bold;padding: 5px 0">Rs. 199</span></p>
-            <div class="registerBtn"><h4 class="mb-0">Register Today for Rs. 199</h4><h4 style="font-size: 15px;font-weight: 400;color: #e7e7e7"> to get total value and bonuses worth Rs. 5,000+ !</h4></div>
-        </div>
 
+    </div>
+    <div>
+        <p class="home-discrip register-details" style="margin: .5em auto;"> त्वरा करा, केवळ 100 जागा शिल्लक!<br>
+            <span>Workshop Date & Time Daily 8:00 PM </span>
+            <span> Get Value worth ₹2999/- Right Now only for ₹199/-</span>
+        </p>
+        <div class="d-flex justify-content-center">
+            <div class="registerBtn text-center" style="margin-bottom: 2em"><h4 class="mb-0">Register Now for ₹199/-
+                Only</h4></div>
+        </div>
     </div>
 
 
     <div class="whatlearn">
 
-        <ul class="list-group fw-bold">
-            <li class="list-group-item active fs-3" style="background-color: #f98908" aria-current="true">तुम्ही काय शिकाल:</li>
+        <ul class="list-group fs-5">
+            <li class="list-group-item active " style="background-color: #f98908" aria-current="true">तुम्ही काय
+                शिकाल:
+            </li>
             <li class="list-group-item">ग्राफिक डिझायनर​ होण्यासाठी आवश्यक असलेली मूलभूत कौशल्ये शिकाल.</li>
             <li class="list-group-item">इमेज मेकिंग आणि टायपोग्राफिद्वारे संवाद कसा साधावा.</li>
-            <li class="list-group-item">टायपोग्राफी ,रंग सिद्धांत ,फोटो ,लेआउट ,ब्लॉकिंग आणि  इतर डिजाईन सिद्धांत आणि कौशल्ये समजून घ्याल .</li>
-            <li class="list-group-item">PowerPoint 2013 चा डिझाईनसाठी वापर.</li>
-            <li class="list-group-item">युट्यूब थंबनेल्स​ आणि सोशल​ मीडिया ग्राफिक्स कसे तयार करावे.</li>
-            <li class="list-group-item">लोगो डिझायन आणि ब्रँडिंग​ प्रकल्पांमध्ये तुमची सर्जनशीलता वाढवण्यासाठी शब्द मॅपिंग आणि विचारमंथन तंत्र जाणून घ्या.</li>
-            <li class="list-group-item">फ्रीलांसर म्हणून घरून काम कसे करावे.</li>
-            <li class="list-group-item">कॅनव्हासह विनानामूल्य, व्यावसायिक गुणवत्ता ग्राफिक डिझायन आणि विडियो डिझायन करण्यास
-                शिका.</li>
-            <li class="list-group-item" >कॅनव्हा वापरून तुम्ही त्वरीत व्यावसायिक गुणवत्ता ग्राफिक डिझायन बनवायला शिकाल.</li>
-            <li class="list-group-item">डिझायनमध्येवापरण्यासाठी टिपा आणि युक्त्या जे तुमच्या प्रेक्षकापर्यन्त 'व्यावसायिक डिझायनर​'
-                म्हणून तुमची ओळख निर्माण करतील</li>
-            <li class="list-group-item">कॅनव्हा सारखेच सोपे असलेले डिझायनचे ४ टूल्स.
+            <li class="list-group-item">टायपोग्राफी ,रंग सिद्धांत ,फोटो ,लेआउट ,ब्लॉकिंग आणि इतर डिजाईन सिद्धांत आणि
+                कौशल्ये समजून घ्याल .
             </li>
+            <li class="list-group-item">पॉवर पॉईंट 2013 चा डिझाईनसाठी वापर.</li>
+            <li class="list-group-item">युट्यूब थंबनेल्स​ आणि सोशल​ मीडिया ग्राफिक्स कसे तयार करावे.</li>
+            <li class="list-group-item">लोगो डिझायन आणि ब्रँडिंग​ प्रकल्पांमध्ये तुमची सर्जनशीलता वाढवण्यासाठी शब्द
+                मॅपिंग आणि विचारमंथन तंत्र जाणून घ्या.
+            </li>
+            <li class="list-group-item">फ्रीलांसर म्हणून घरून काम कसे करावे.</li>
+            <li class="list-group-item">कॅनव्हासह विनामूल्य, व्यावसायिक गुणवत्ता ग्राफिक डिझायन.
+            </li>
+            <li class="list-group-item">कॅनव्हा वापरून तुम्ही त्वरीत व्यावसायिक गुणवत्ता ग्राफिक डिझायन बनवायला शिकाल.
+            </li>
+            <li class="list-group-item">डिझायनमध्येवापरण्यासाठी टिपा आणि युक्त्या जे तुमच्या प्रेक्षकापर्यन्त
+                'व्यावसायिक डिझायनर​' म्हणून तुमची ओळख निर्माण करतील.
+            </li>
+            <li class="list-group-item">कॅनव्हा सारखेच सोपे असलेले डिझायनचे ४ टूल्स.</li>
             <li class="list-group-item">विनामूल्य स्टॉक आणि प्रतिमा कुठून मिळतील ते शिकाल.</li>
             <li class="list-group-item">बॅकग्राऊंड कस रीमूव कराल.</li>
             <li class="list-group-item">तुमच्या सहीची (सिग्नेचर) डिझाईन तयार कशी तयार कराल.</li>
             <li class="list-group-item">क्यू आर कोि कसा तयार करायचा.</li>
-            <li class="list-group-item">ई-बुक साठी बुक कव्हर कस तयार कराव. </li>
+            <li class="list-group-item">ई-बुक साठी बुक कव्हर कस तयार कराव.</li>
             <li class="list-group-item">ग्राफिक डिझाईन संदरभात लाईव्ह प्रश्नोत्तरे.</li>
         </ul>
     </div>
 
-
-
-
+    <br>
     <div class="carousal-div ">
-        <h3>Take a look at the graphics below. Do you want to learn graphics like that?</h3>
-        <br>
-        <div id="carouselExampleIndicators2" class="carousel slide my-5" data-bs-ride="carousel">
+        <h3 class="mb-0">Some more Sample Designs that you will Learn here.</h3>
+        <div id="carouselExampleIndicators2" class="carousel slide my-3" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Images/Picture6.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                    <img src="Images/Picture6.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Picture7.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                    <img src="Images/Picture7.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Picture8.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                    <img src="Images/Picture8.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Picture9.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                    <img src="Images/Picture9.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Picture10.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                    <img src="Images/Picture10.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <div class="text-center">
-            <h2 class="mb-0"> All You Have To Do is Take Action Right Now.</h2>
-            <p class="home-discrip register-details" style="margin: .5em auto"> Why? Because seats are strictly limited (Only 100)<br>
-                <span style="font-size: .8em;font-weight: bold">Workshop Date : 15th Dec. 10:00 Am (IST)</span>
-                <span style="display: flex;justify-content: center"> Total Value Rs. <s style="width: 70px"> 5999</s>&nbsp; Right Now Only At </span>
-                <span style="color: red;font-size: 2em;font-weight: bold;padding: 5px 0">Rs. 199</span></p>
-            <div class="registerBtn"><h4 class="mb-0">Register Today for Rs. 199</h4><h4 style="font-size: 15px;font-weight: 400;color: #e7e7e7"> to get total value and bonuses worth Rs. 5,000+ !</h4></div>
         </div>
     </div>
 
     <br>
     <div class="freeGifts">
-        <h2 class="text-center fw-bold fs-1" style="color: #222a34;padding: 20px 0">Free Gifts</h2>
+        <h2 class="text-center fw-bold fs-2" style="color: #222a34;padding: 20px 0">Free Gifts</h2>
 
-        <ol class="list-group  fs-4">
-            <li class="list-group-item fw-bold active" style="background-color: #f98908">Folder 1 Designs Materials : </li>
-            <li class="list-group-item">2000+ Grand Super Pack PNG Files Collection : ClipArt’s, Effects, Element-Floral-Corner-Border, Flower's, Modern
-                Photo Frame, Titles-Quotes </li>
+        <ol class="list-group fs-5">
+            <li class="list-group-item active" style="background-color: #f98908">Folder 1 Designs Materials :
+            </li>
+            <li class="list-group-item">2000+ Grand Super Pack PNG Files Collection : ClipArt’s, Effects,
+                Element-Floral-Corner-Border, Flower's, Modern
+                Photo Frame, Titles-Quotes
+            </li>
             <li class="list-group-item">10,000+ Editable Icons</li>
             <li class="list-group-item">40+ Info graphic Slides</li>
             <li class="list-group-item">Premium Digital Business Card Slides</li>
         </ol>
         <br>
-        <ol class="list-group  fs-4">
-            <li class="list-group-item fw-bold active" style="background-color: #f98908">Folder 2 Ebooks :</li>
-            <li class="list-group-item">ToElearnToEarn</li>
+        <ol class="list-group  fs-5">
+            <li class="list-group-item active" style="background-color: #f98908">Folder 2 Ebooks :</li>
+            <li class="list-group-item">TolearnToEarn</li>
             <li class="list-group-item">The Power Of Social Media</li>
             <li class="list-group-item">Branding Yourself and Your Business</li>
             <li class="list-group-item">Work From Home Productivity</li>
@@ -402,28 +436,32 @@
             <li class="list-group-item">Article Marketing Explained</li>
         </ol>
         <br>
-        <ol class="list-group fs-4">
-            <li class="list-group-item fw-bold active" style="background-color: #f98908">Folder 3 Video Courses :</li>
+        <ol class="list-group fs-5">
+            <li class="list-group-item active" style="background-color: #f98908">Folder 3 Video Courses :</li>
             <li class="list-group-item">Blogging</li>
-            <li class="list-group-item">Google My Business </li>
-            <li class="list-group-item">Freelancing </li>
+            <li class="list-group-item">Google My Business</li>
+            <li class="list-group-item">Freelancing</li>
             <li class="list-group-item">Instagram Marketing</li>
             <li class="list-group-item">Email Marketing with Mailchimp</li>
         </ol>
         <br>
-        <ol class="fs-4 list-group">
-            <li class="list-group-item fw-bold active" style="background-color: #f98908">Folder 4 8000+ Facebook Group Links:</li>
+        <ol class="list-group fs-5">
+            <li class="list-group-item active" style="background-color: #f98908">Folder 4 8000+ Facebook Group
+                Links:
+            </li>
             <li class="list-group-item">8000+ FACEBOOK BUSINESS GROUP Links In PDF.</li>
         </ol>
     </div>
 
-    <div class="text-center my-5">
-        <h2 class="mb-0"> All You Have To Do is Take Action Right Now.</h2>
-        <p class="home-discrip register-details" style="margin: .5em auto"> Why? Because seats are strictly limited (Only 100)<br>
-            <span style="font-size: .8em;font-weight: bold">Workshop Date : 15th Dec. 10:00 Am (IST)</span>
-            <span style="display: flex;justify-content: center"> Total Value Rs. <s style="width: 70px"> 5999</s>&nbsp; Right Now Only At </span>
-            <span style="color: red;font-size: 2em;font-weight: bold;padding: 5px 0">Rs. 199</span></p>
-        <div class="registerBtn"><h4 class="mb-0">Register Today for Rs. 199</h4><h4 style="font-size: 15px;font-weight: 400;color: #e7e7e7"> to get total value and bonuses worth Rs. 5,000+ !</h4></div>
+    <div>
+        <p class="home-discrip register-details" style="margin: .5em auto;"> त्वरा करा, केवळ 100 जागा शिल्लक!<br>
+            <span>Workshop Date & Time Daily 8:00 PM </span>
+            <span> Get Value worth ₹2999/- Right Now only for ₹199/-</span>
+        </p>
+        <div class="d-flex justify-content-center">
+            <div class="registerBtn text-center" style="margin-bottom: 2em"><h4 class="mb-0">Register Now for ₹199/-
+                Only</h4></div>
+        </div>
     </div>
 
 </div>
@@ -432,7 +470,8 @@
 <script>
 
     CreateBalls();
-    function CreateBalls(){
+
+    function CreateBalls() {
         // Some random colors
         const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
@@ -462,8 +501,8 @@
 
             let anim = el.animate(
                 [
-                    { transform: "translate(0, 0)" },
-                    { transform: `translate(${to.x}rem, ${to.y}rem)` }
+                    {transform: "translate(0, 0)"},
+                    {transform: `translate(${to.x}rem, ${to.y}rem)`}
                 ],
                 {
                     duration: (Math.random() + 1) * 2000, // random duration
